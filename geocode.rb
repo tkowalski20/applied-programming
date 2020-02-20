@@ -7,3 +7,7 @@ before { puts "Parameters: #{params}" }
 get "/" do
   view "geocode"
 end
+
+get "/map" do
+    params["location"]
+end
